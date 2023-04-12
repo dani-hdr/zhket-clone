@@ -64,16 +64,16 @@ const Header = () => {
             </Stack>
             <DesktopNav categories={categories} />
             <MobileNav  categories={categories} isOpen={isMobileNavOpen} toggle={toggleMobileNav}/>
-            <Stack direction="row" gap={1} alignItems="center">
+            <Stack direction="row" gap={0} alignItems="center">
               <Box>
                 <IconButton
-                  size="large"
+                  size="medium"
                   sx={{ "&:hover": { bgcolor: "transparent" } }}
                 >
                   <BiSearch />
                 </IconButton>
                 <IconButton
-                  size="large"
+                  size="medium"
                   sx={{ "&:hover": { bgcolor: "transparent" } }}
                 >
                   <BiShoppingBag />
@@ -91,7 +91,7 @@ const Header = () => {
               />
               <Button
                 variant="text"
-                size="large"
+                size="medium"
                 sx={{
                   color: "text.secondary",
                   "&:hover": { bgcolor: (theme) => theme.palette.grey[200] },
@@ -99,7 +99,7 @@ const Header = () => {
               >
                 ورود
               </Button>
-              <Button variant="contained" size="large">
+              <Button variant="contained" size="medium">
                 ثبت نام
               </Button>
             </Stack>
